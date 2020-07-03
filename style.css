@@ -1,16 +1,18 @@
 
 /* default values */
 body{
+    font-family: 'Poppins', sans-serif;
     margin: 0; 
     padding: 0;
-    
 }
 
 .container{
     display: flex; 
     flex-direction: column;
     align-items: center;
-    background-color: #535293;
+    background:linear-gradient(0deg, rgba(58,60,140, 0.7), rgba(58,60,140, 0.7)), url(images/survey-form-background.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
@@ -19,13 +21,21 @@ body{
 
 header{
     text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
     color: white;
 }
 
+#title{
+    font-weight: 400;
+}
+
 header p{
     font-style: italic;
+    font-weight: 100;
+    font-size: 1.1em;
 }
 
 
@@ -34,7 +44,7 @@ header p{
 .survay-form{
     background-color: rgba(39,38,70, 0.9);
     color: white;
-    padding: 1em;
+    padding: 3em;
 }
 
 
@@ -62,10 +72,6 @@ input[type="text"], input[type="email"], input[type="number"]
     font-size: 1em;
 }
 
-
-
-
-
 .current-role-info select, .favorite-feature-info select{
     border: none;
     font-size: 1em;
@@ -74,8 +80,6 @@ input[type="text"], input[type="email"], input[type="number"]
     width: 100%;
     background-color: white;
 }
-
-
 
 .recommendtion-info, .favorite-feature-info, .improvement-recommendation-info,  .recommendation-text-info{
     font-size: 1.2em;
@@ -110,6 +114,7 @@ textarea
 {
     font-size: 1em;
     height: 100px;
+    padding-left: 10px;
 }
 
 
